@@ -92,6 +92,9 @@
 	color: #222;
 	padding: 2px 5px;
 }
+.logo a img {
+	height: 80px;
+}
 .back {
 	margin: 0 0 0 20px;
 }
@@ -175,9 +178,6 @@ section {
 	width: 10px;
 	height: 100%;
 	background: rgba(255,255,255,0.05);
-}
-.hide {
-	display: none;
 }
 /* Обнулення */
 *{

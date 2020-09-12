@@ -107,11 +107,16 @@
 	color: #fff;
 }
 /* OTHER */
+html {
+	background: #222;
+}
 body {
 	overflow-x: hidden;
 	/*overflow-y: hidden;*/
 	min-height: 100vh;
-	background: #222;
+	background: url(../img/Лого_ТНЕУ.png) no-repeat;
+	background-position: center;
+	background-size: 20%;
 	font-family: 'Roboto Slab', serif;
 	letter-spacing: 0.5px;
 	width: 100%;

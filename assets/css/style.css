@@ -37,8 +37,8 @@
 .main3__logo a:hover {
 	color: blue;
 }
-.main3__logo p:nth-child(3) {
-	color: red;
+.main3__logo p:nth-child(4) {
+	color: white;
 	font-size: 130%;
 }
 .main3__text {

@@ -1,0 +1,260 @@
+/* FOOTER */
+
+/* MAIN11 */
+
+/* MAIN9 */
+
+/* MAIN8 */
+
+/* MAIN7 */
+
+/* MAIN6 */
+
+/* MAIN5 */
+
+/* MAIN4 */
+
+/* MAIN3 */
+.main3 {
+	color: white;
+	width: 100%;
+
+}
+.main3__logo {
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.main3__logo p:nth-child(1) {
+	font-size: 200%;
+}
+.main3__logo a {
+	margin: 10px;
+	font-size: 130%;
+	color: red;
+}
+.main3__logo a:hover {
+	color: blue;
+}
+.main3__logo p:nth-child(3) {
+	color: red;
+	font-size: 130%;
+}
+.main3__text {
+	font-size: 130%;
+	margin: 10px;
+}
+/* MAIN2 */
+.main2 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main2__block {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 800px;
+	height: 50px;
+	background: white;
+	margin: 20px;
+}
+.main2__text {
+	margin: 0 10px;
+}
+.main2__link a {
+	color: red;
+}
+.main2__link a:hover {
+	color: blue;
+}
+.main2__data {
+	margin: 0 10px;
+}
+/* MAIN1 */
+.main1 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+.main1__block {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 800px;
+	height: 50px;
+	margin: 20px;
+	background: #0ffff4;
+}
+.main1__text {
+	margin: 0 10px;
+}
+.main1__link a {
+	color: red;
+}
+.main1__link a:hover {
+	color: blue;
+}
+.main1__data {
+	margin: 0 10px;
+}
+/* HEADER */
+.header {
+	width: 100%;
+	height: 80px;
+	background: #31b2bfcf;
+}
+.header__block {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.logo {
+	margin: 0 auto;
+}
+.logo a {
+	font-size: 400%;
+	color: #222;
+}
+.back {
+	margin: 0 0 0 20px;
+}
+.back a {
+	font-size: 180%;
+	color: #222;
+}
+/* OTHER */
+body {
+	overflow-x: hidden;
+	/*overflow-y: hidden;*/
+	min-height: 100vh;
+	background: #222;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 0.5px;
+	width: 100%;
+}
+a.active {
+	color: white;
+}
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+/* OTHER */
+@media (max-width: 768px) {
+	.main1 {
+		flex-direction: row !important;
+	}
+}
+@media (max-width: 570px) {
+	.logo a {
+		font-size: 300%;
+	}
+}
+@media (max-width: 455px) {
+	.logo a {
+		font-size: 250%;
+	}
+	.back a {
+		font-size: 150%;
+	}
+}
+@media (max-width: 320px) {
+	.logo a {
+		font-size: 220%;
+	}
+	.back a {
+		font-size: 120%;
+	}
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+#progressbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	animation: scrollbar 5s linear infinite;
+}
+@keyframes scrollbar {
+	0%,100% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+}
+#progressbar:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	filter: blur(10px);
+}
+#progressbar:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	filter: blur(30px);
+}
+#scrollPath {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: rgba(255,255,255,0.05);
+}
+/* Обнулення */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}

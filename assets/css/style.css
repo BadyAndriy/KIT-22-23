@@ -21,7 +21,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	background: ;
+	text-align: center;
 }
 .main2__block {
 	width: 100%;
@@ -175,6 +175,9 @@ section {
 	width: 10px;
 	height: 100%;
 	background: rgba(255,255,255,0.05);
+}
+.hide {
+	display: none;
 }
 /* Обнулення */
 *{

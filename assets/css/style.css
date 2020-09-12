@@ -30,9 +30,9 @@
 	font-size: 200%;
 }
 .main3__logo a {
-	margin: 10px;
 	font-size: 130%;
 	color: red;
+	padding: 20px 20px;
 }
 .main3__logo a:hover {
 	color: blue;
@@ -66,6 +66,7 @@
 }
 .main2__link a {
 	color: red;
+	padding: 15px 10px;
 }
 .main2__link a:hover {
 	color: blue;
@@ -95,6 +96,7 @@
 }
 .main1__link a {
 	color: red;
+	padding: 15px 10px;
 }
 .main1__link a:hover {
 	color: blue;
@@ -121,6 +123,7 @@
 .logo a {
 	font-size: 400%;
 	color: #222;
+	padding: 2px 5px;
 }
 .back {
 	margin: 0 0 0 20px;
@@ -128,6 +131,10 @@
 .back a {
 	font-size: 180%;
 	color: #222;
+	padding: 23px 20px;
+}
+.back a:hover {
+	color: #fff;
 }
 /* OTHER */
 body {

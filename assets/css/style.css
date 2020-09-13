@@ -153,6 +153,9 @@ section {
 	.main2__foto img {
 		height: 50px;
 	}
+	.main2__data {
+		margin: 0 10px;
+	}
 }
 @media (max-width: 320px) {
 	.header {

@@ -37,7 +37,7 @@
 	height: 80px;
 }
 .main2__link {
-	margin: 0 10px;
+
 }
 .main2__link a {
 	color: #31b2bfcf;
@@ -57,7 +57,7 @@
 	height: 100vh;
 	width: 180px;
 	border: 1px solid #716a5d;
-	position: fixed;
+	position: absolute;
 	top: 80px;
 	left: 0;
 	display: flex;
@@ -92,12 +92,6 @@
 	color: #222;
 	padding: 2px 5px;
 }
-.logo a img {
-	height: 80px;
-}
-.back {
-	margin: 0 0 0 20px;
-}
 .back a {
 	font-size: 180%;
 	color: #222;
@@ -107,21 +101,16 @@
 	color: #fff;
 }
 /* OTHER */
-html {
-	background: #222;
-}
 body {
 	overflow-x: hidden;
 	/*overflow-y: hidden;*/
 	min-height: 100vh;
-	background: url(../img/Лого_ТНЕУ.png) no-repeat;
-	background-position: center;
+	background: #222;
 	background-size: 20%;
 	font-family: 'Roboto Slab', serif;
 	letter-spacing: 0.5px;
 	width: 100%;
 	font-family: 'PT Sans', sans-serif;
-	background-attachment: fixed;
 }
 a.active {
 	color: #62a72f;
@@ -135,8 +124,100 @@ section {
 	padding: 0 0 0 180px;
 }
 /* OTHER */
+@media (max-width: 767px) {
+	.main1 {
+		width: 100%;
+		height: 60px;
+		position: relative;
+		top: 0;
+		left: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.main1 a {
+		height: 50%;
+		font-size: 100%;
+		padding: 5px 10px;
+		border: 1px solid #716a5d;
+	}
+	.logo a {
+		font-size: 200%;
+	}
+	.back a {
+		font-size: 120%;
+		padding: 10px 10px;
+	}
+	.container {
+		padding: 0;
+	}
+	.main2__foto img {
+		height: 50px;
+	}
+}
 @media (max-width: 320px) {
-	
+	.header {
+		height: 40px;
+	}
+	.main1 {
+		width: 100%;
+		height: 60px;
+		position: relative;
+		top: 0;
+		left: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.main1 a {
+		height: 50%;
+		font-size: 100%;
+		padding: 5px 10px;
+		border: 1px solid #716a5d;
+	}
+	.logo a {
+		font-size: 200%;
+	}
+	.back a {
+		font-size: 120%;
+		padding: 10px 10px;
+	}
+	.container {
+		padding: 0;
+	}
+	.main2 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+	}
+	.main2__block {
+		width: 100%;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		font-size: 90%;
+		color: #fff;
+		border: 1px solid #716a5d;
+	}
+	.main2__foto img {
+		height: 30px;
+	}
+	.main2__link {
+
+	}
+	.main2__link a {
+		color: #31b2bfcf;
+		padding: 20px 5px;
+	}
+	.main2__link a:hover {
+		color: #62a72f;
+	}
+	.main2__description {
+		color: #fff;
+	}
+	.main2__data {
+		margin: 0 5px;
+	}
 }
 ::-webkit-scrollbar {
 	width: 0;

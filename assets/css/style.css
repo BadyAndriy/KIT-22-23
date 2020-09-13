@@ -121,6 +121,7 @@ body {
 	letter-spacing: 0.5px;
 	width: 100%;
 	font-family: 'PT Sans', sans-serif;
+	background-attachment: fixed;
 }
 a.active {
 	color: #62a72f;

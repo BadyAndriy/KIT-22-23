@@ -6,55 +6,57 @@ window.onscroll = function(){
 };
 // =======================================================
 
+// =======================================================
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+ 
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
 
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+ 
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+ 
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+ 
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
 
-// function imgSlider(anything){
-// 	document.getElementById("slider").src = anything;
-// }
+var deadline = '2021-1-1';
+initializeClock('countdown2', deadline);
+ 
+var deadline = '2021-5-31';
+initializeClock('countdown', deadline);
+// =======================================================
 
-// gsap.timeline({
-// 	scrollTrigger: {
-// 		trigger: ".box2",
-// 		start: "center 100%",
-// 		markers: false,
-// 		scrub: false,
-// 		pin: false
-// 	}
-// })
-// .from('.box2 img', {x : innerWidth * -1})
-// .from('.box2 h2', {y : innerHeight * -1})
-// .from('.box2 p', {x : innerWidth * 1})
-// gsap.timeline({
-// 	scrollTrigger: {
-// 		trigger: ".box3",
-// 		start: "center 100%",
-// 		markers: false,
-// 		scrub: false,
-// 		pin: false
-// 	}
-// })
-// .from('.box3 img', {x : innerWidth * -1})
-// .from('.box3 h2', {x : innerWidth * 1})
-// .from('.box3 p', {x : innerWidth * 1})
-// gsap.timeline({
-// 	scrollTrigger: {
-// 		trigger: ".box4",
-// 		start: "center 100%",
-// 		markers: false,
-// 		scrub: false,
-// 		pin: false
-// 	}
-// })
-// .from('.box4 img', {x : innerWidth * -1})
-// .from('.box4 h2', {x : innerWidth * 1})
-// .from('.box4 p', {y : innerHeight * 1})
+// =======================================================
 
+// =======================================================
 
-// $(document).ready(function(){
-//     $(".nav").on("click","a", function (event) {
-//         event.preventDefault();
-//         var id  = $(this).attr('href'),
-//             top = $(id).offset().top;
-//         $('body,html').animate({scrollTop: top}, 1500);
-//     });
-// });
+// =======================================================
+
+// =======================================================

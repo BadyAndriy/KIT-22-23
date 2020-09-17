@@ -290,6 +290,9 @@ body.loaded_hiding .preloader{
 		align-items: center;
 		justify-content: center;
 	}
+	.header.active .back {
+		display: none;
+	}
 	body.active {
 		overflow-x: hidden;
 		overflow-y: hidden;

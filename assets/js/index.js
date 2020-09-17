@@ -1,6 +1,11 @@
 
 // =======================================================
-
+$(document).ready(function(){
+  $('.header__menu-burger').click(function(){
+    $('.header').toggleClass('active')
+    $('body').toggleClass('active')
+  })
+});
 // =======================================================
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());

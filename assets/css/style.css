@@ -241,6 +241,7 @@ body.loaded_hiding .preloader{
 		display: inline-block;
 		position: absolute;
 		right: 40px;
+		top: 15px;
 		width: 30px;
 		height: 20px;
 		cursor: pointer;

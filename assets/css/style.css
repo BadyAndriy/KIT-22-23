@@ -262,7 +262,7 @@ body.loaded_hiding .preloader{
 		bottom: 2px;
 	}
 	.header {
-		transition: 0.3s;
+		transition: 0.1s;
 		height: 50px;
 	}
 	.header.active {

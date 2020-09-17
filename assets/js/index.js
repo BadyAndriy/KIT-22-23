@@ -1,9 +1,4 @@
-let progress = document.getElementById('progressbar');
-let totalHeight = document.body.scrollHeight - window.innerHeight;
-window.onscroll = function(){
-	let progressHeight = (window.pageYOffset / totalHeight) * 100;
-	progress.style.height = progressHeight + "%";
-};
+
 // =======================================================
 
 // =======================================================
@@ -52,7 +47,12 @@ initializeClock('countdown2', deadline);
 var deadline = '2021-5-31';
 initializeClock('countdown', deadline);
 // =======================================================
-
+window.onload = function () {
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.remove('loaded_hiding');
+  }, 500);
+}
 // =======================================================
 
 // =======================================================

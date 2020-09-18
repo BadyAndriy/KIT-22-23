@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 	<title>KIT-22,23</title>
 </head>
-<body">
+<body class="body">
 
 	<div class="preloader">
 		<div class="loader">
@@ -25,16 +25,37 @@
 	<header class="header">
 		<div class="header__block">
 			<div class="header__menu">
-				<a href="pages/temk1.html" class="btn1">ТЕМК</a>
-				<a href="pages/grafica1.html" class="btn2">Графіка</a>
-				<a href="pages/logica1.html" class="btn3">Логіка</a>
-				<a href="pages/filosofia1.html" class="btn4">Філософія</a>
+				<a href="pages/temk1.html">ТЕМК</a>
+				<a href="pages/grafica1.html">Графіка</a>
+				<a href="pages/logica1.html">Логіка</a>
+				<a href="pages/filosofia1.html">Філософія</a>
 			</div>
 			<div class="header__menu-burger">
 				<span></span>
 			</div>
 		</div>
 	</header>
+
+	<form>
+		<button 
+			type="text"
+			id="input"
+			class="input"
+			autocomplete="off"
+			onclick="dark()" 
+		>
+			Темний режим
+		</button>
+		<button 
+			type="text"
+			id="input"
+			class="input"
+			autocomplete="off"
+			onclick="white()" 
+		>
+			Світлий режим
+		</button>
+	</form>
 
 	<div class="container">
 		<div class="main1">

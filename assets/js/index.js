@@ -1,4 +1,23 @@
+const todos = JSON.parse(localStorage.getItem("dark-mode"));
 
+if (todos == '1') {
+  $('body').toggleClass('dark-mode')
+  $('html').toggleClass('dark-mode')
+}
+function white() {
+  localStorage.removeItem("dark-mode", JSON.stringify(1));
+  location.reload();
+}
+function dark() {
+  localStorage.setItem("dark-mode", JSON.stringify(1));
+  location.reload();
+}
+// =======================================================
+// $(document).ready(function(){
+//   $('button').click(function(){
+//     $('body').toggleClass('dark-mode')
+//   })
+// });
 // =======================================================
 $(document).ready(function(){
   $('.header__menu-burger').click(function(){

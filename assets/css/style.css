@@ -253,6 +253,9 @@ body {
 	font-family: 'PT Sans', sans-serif;
 }
 /* PRELOADER */
+body.loaded_hiding {
+	overflow-y: hidden;
+}
 body.loaded_hiding .preloader{
 	display: flex;
 }
